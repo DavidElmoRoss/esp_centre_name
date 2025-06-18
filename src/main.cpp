@@ -52,9 +52,7 @@ void loop()                            // Arduino LOOP Function - instructions r
         fflush(stdout);                 // output buffer flushed to screen
         if(name[i]==0x08)               // if <DEL> char 
         {
-        // input=name[i];                 // input char gets array value at index i
-        input=0x7f;
-         (char)Serial.write(input);     // delete char written to screen
+        input=name[i];                 // input char gets array value at index i
             --i;                        // move index back one for <DEL>
             --i;                        // move index back one for char
         }
