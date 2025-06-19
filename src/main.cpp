@@ -20,8 +20,8 @@ void position(int x, int y);            // function to position cursor
 
 // Global Variable Section
 unsigned char name[MAX];               // Name has MAX number of characters
-int i,x;
-char input;
+volatile int i,x;
+volatile char input;
 
 void setup()                           // Arduino Setup Function - instructions done only once
 {
