@@ -33,7 +33,7 @@ void loop()                            // Arduino LOOP Function - instructions r
   for(;;)                              // endless loop inside loop function
   {
     clear();                            // clear the screen
-    position(1,1);                      // position cursor at (1,1)
+    position(3,1);                      // position cursor at (1,1)
     i=0;                                // set index of name[] array to 0
     printf("Input ALL your name ? ");   // prompt for user name
     fflush(stdout);                     // flush output to screen
